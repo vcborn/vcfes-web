@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Zen Kaku Gothic New', ...defaultTheme.fontFamily.sans],
+        futura: ['futura-pt', ...defaultTheme.fontFamily.sans],
       },
     },
   },

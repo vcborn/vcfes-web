@@ -7,6 +7,7 @@ import { AppContextProvider } from './AppContext'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Loading from './components/Loading'
 
 const App: Component = () => {
   const Routes = useRoutes(routes)
@@ -14,6 +15,7 @@ const App: Component = () => {
   return (
     <>
       <Header />
+      <Loading />
       <AppContextProvider>
         <main>
           <Routes />

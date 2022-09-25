@@ -1,4 +1,4 @@
-import { Component, createSignal } from 'solid-js'
+import { Component, createSignal, createEffect } from 'solid-js'
 import { MetaProvider, Title, Meta } from 'solid-meta'
 import { BsYoutube, BsTwitter } from 'solid-icons/bs'
 import {
@@ -9,9 +9,22 @@ import {
   Transition,
   TransitionChild,
 } from 'solid-headless'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 
 const Winter2022: Component<{}> = () => {
   const [open, setOpen] = createSignal('')
+  createEffect(() => {
+    document.querySelectorAll('.title-anim').forEach((item, i) => {
+      gsap.from(item, {
+        opacity: 0,
+        ease: 'power2',
+        duration: 0.8,
+        yPercent: 100,
+        delay: i * 0.03,
+      })
+    })
+  })
   function closeModal() {
     setOpen('')
   }
@@ -33,12 +46,40 @@ const Winter2022: Component<{}> = () => {
       <div class='flex flex-col justify-center h-[80vh] bg-gradient-to-br from-blue-900 to-black text-white'>
         <div class='max-w-5xl mx-auto container'>
           <div class='mx-4 flex flex-col items-center gap-3'>
-            <h2 class='text-7xl pb-2 font-bold'>VCFes Winter 2022</h2>
-            <p class='text-4xl'>12月 OR 1月</p>
+            <h2 class='flex flex-wrap text-7xl pb-2 font-bold'>
+              <span class='title-anim'>V</span>
+              <span class='title-anim'>C</span>
+              <span class='title-anim'>F</span>
+              <span class='title-anim'>e</span>
+              <span class='title-anim'>s</span>
+              <span class='title-anim block w-full md:w-auto h-0'>&nbsp;</span>
+              <span class='title-anim'>W</span>
+              <span class='title-anim'>i</span>
+              <span class='title-anim'>n</span>
+              <span class='title-anim'>t</span>
+              <span class='title-anim'>e</span>
+              <span class='title-anim'>r</span>
+              <span class='title-anim block w-full md:w-auto h-0'>&nbsp;</span>
+              <span class='title-anim'>2</span>
+              <span class='title-anim'>0</span>
+              <span class='title-anim'>2</span>
+              <span class='title-anim'>2</span>
+            </h2>
+            <p class='text-4xl flex'>
+              <span class='title-anim'>1</span>
+              <span class='title-anim'>2</span>
+              <span class='title-anim'>月</span>
+              <span class='title-anim'>&nbsp;</span>
+              <span class='title-anim'>O</span>
+              <span class='title-anim'>R</span>
+              <span class='title-anim'>&nbsp;</span>
+              <span class='title-anim'>1</span>
+              <span class='title-anim'>月</span>
+            </p>
           </div>
         </div>
       </div>
-      <div class='px-4 max-w-4xl mx-auto container mt-10 mb-20 text-center'>
+      <div class='mt-10 mb-20 text-center schedule-trigger'>
         {/*<img src='/img/antenna.png' class='h-36 mx-auto' />
         <div class='relative bg-blue-900 inline-block text-white rounded-lg px-8 py-7 overflow-hidden mb-10'>
           <h2 class='absolute text-xl font-bold bg-black -rotate-12 pl-12 pr-64 py-1 -left-2 top-2'>
@@ -53,12 +94,12 @@ const Winter2022: Component<{}> = () => {
             allowfullscreen
           ></iframe>
   </div>*/}
-        <div>
-          <h2 class='text-3xl font-semibold'>タイムスケジュール</h2>
-          <table class='border-black border-collapse w-full md:w-3/4 mx-auto my-10 text-lg'>
+        <div class='schedule max-w-4xl mx-auto container px-4'>
+          <h2 class='text-4xl font-semibold font-futura'>TIME TABLE</h2>
+          <table class='shadow-md border-black border-collapse w-full md:w-3/4 mx-auto my-10 text-lg'>
             <thead>
               <tr>
-                <th class='bg-orange-400 text-white' colSpan={2}>
+                <th class='bg-gradient-to-r from-orange-400 to-red-400 text-white py-2' colSpan={2}>
                   昼の部
                 </th>
               </tr>
@@ -78,10 +119,10 @@ const Winter2022: Component<{}> = () => {
               </tr>
             </tbody>
           </table>
-          <table class='border-black border-collapse w-full md:w-3/4 mx-auto mt-10 mb-20 text-lg'>
+          <table class='shadow-md border-black border-collapse w-full md:w-3/4 mx-auto mt-10 mb-20 text-lg'>
             <thead>
               <tr>
-                <th class='bg-blue-900 text-white' colSpan={2}>
+                <th class='bg-gradient-to-r from-blue-900 to-black text-white py-2' colSpan={2}>
                   夜の部
                 </th>
               </tr>
@@ -102,24 +143,33 @@ const Winter2022: Component<{}> = () => {
             </tbody>
           </table>
         </div>
-        <div>
-          <h2 class='text-3xl font-semibold'>参加型イベント</h2>
+        <div class='max-w-4xl mx-auto container px-4'>
+          <h2 class='text-4xl font-semibold font-futura'>EVENTS</h2>
           <div class='grid grid-cols-1 md:grid-cols-2 gap-5 mt-10 mb-20 text-xl'>
-            <button class='focus:outline-none' onClick={() => openModal('game')}>
+            <button class='focus:outline-none group' onClick={() => openModal('game')}>
               <div>
-                <img src='/img/events/game.png' class='mb-2 rounded-md' />
+                <img
+                  src='/img/events/game.png'
+                  class='mb-2 rounded-md shadow-md duration-200 group-hover:shadow'
+                />
                 <h3>ゲーム大会</h3>
               </div>
             </button>
-            <button class='focus:outline-none' onClick={() => openModal('quiz')}>
+            <button class='focus:outline-none group' onClick={() => openModal('quiz')}>
               <div>
-                <img src='/img/events/quiz.png' class='mb-2 rounded-md' />
+                <img
+                  src='/img/events/quiz.png'
+                  class='mb-2 rounded-md shadow-md duration-200 group-hover:shadow'
+                />
                 <h3>クイズ大会</h3>
               </div>
             </button>
-            <button class='focus:outline-none' onClick={() => openModal('food')}>
+            <button class='focus:outline-none group' onClick={() => openModal('food')}>
               <div>
-                <img src='/img/events/food.png' class='mb-2 rounded-md' />
+                <img
+                  src='/img/events/food.png'
+                  class='mb-2 rounded-md shadow-md duration-200 group-hover:shadow'
+                />
                 <h3>飯テロ</h3>
               </div>
             </button>
@@ -259,29 +309,38 @@ const Winter2022: Component<{}> = () => {
             </Dialog>
           </Transition>
         </div>
-        <div>
-          <h2 class='text-3xl font-semibold'>スタッフ</h2>
-          <div class='mt-10 mb-20 flex flex-col md:flex-row gap-6 items-center justify-center'>
-            <button class='focus:outline-none' onClick={() => openModal('mushroom')}>
+        <div class='bg-black text-white py-16'>
+          <h2 class='text-4xl font-semibold font-futura'>STAFF</h2>
+          <div class='my-10 flex flex-col md:flex-row gap-6 items-center justify-center'>
+            <button class='focus:outline-none group' onClick={() => openModal('mushroom')}>
               <div class='flex flex-col items-center gap-3 text-xl'>
-                <img src='/img/staff/mushroom.jpg' class='rounded-full w-36' />
+                <img
+                  src='/img/staff/mushroom.jpg'
+                  class='rounded-full w-36 h-36 duration-200 overflow-hidden object-cover group-hover:scale-110'
+                />
                 <p>mushroom</p>
               </div>
             </button>
-            <button class='focus:outline-none' onClick={() => openModal('wamo')}>
+            <button class='focus:outline-none group' onClick={() => openModal('wamo')}>
               <div class='flex flex-col items-center gap-3 text-xl'>
-                <img src='/img/staff/wamo.jpg' class='rounded-full w-36' />
+                <img
+                  src='/img/staff/wamo.jpg'
+                  class='rounded-full w-36 h-36 duration-200 overflow-hidden object-cover group-hover:scale-110'
+                />
                 <p>wamo</p>
               </div>
             </button>
-            <button class='focus:outline-none' onClick={() => openModal('pnuts2872ykr')}>
+            <button class='focus:outline-none group' onClick={() => openModal('pnuts2872ykr')}>
               <div class='flex flex-col items-center gap-3 text-xl'>
-                <img src='/img/staff/pnuts2872ykr.jpg' class='rounded-full w-36' />
+                <img
+                  src='/img/staff/pnuts2872ykr.jpg'
+                  class='rounded-full w-36 h-36 duration-200 overflow-hidden object-cover group-hover:scale-110'
+                />
                 <p>pnuts2872ykr</p>
               </div>
             </button>
           </div>
-          <div>
+          <div class='text-black'>
             <Transition appear show={open() == 'mushroom'}>
               <Dialog isOpen class='fixed inset-0 z-10 overflow-y-auto' onClose={closeModal}>
                 <div class='min-h-screen px-4 flex items-center justify-center'>
@@ -303,7 +362,7 @@ const Winter2022: Component<{}> = () => {
                     leaveFrom='opacity-100 scale-100'
                     leaveTo='opacity-0 scale-95'
                   >
-                    <DialogPanel class='text-center z-30 flex flex-col items-center w-full max-w-md py-6 px-20 my-8 overflow-hidden align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
+                    <DialogPanel class='text-center z-30 flex flex-col items-center w-full max-w-md py-6 px-14 md:px-20 my-8 overflow-hidden align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
                       <img src='/img/staff/mushroom.jpg' class='rounded-full w-24 mb-4' />
                       <DialogTitle as='h3' class='text-2xl font-bold'>
                         mushroom
@@ -348,7 +407,7 @@ const Winter2022: Component<{}> = () => {
                     leaveFrom='opacity-100 scale-100'
                     leaveTo='opacity-0 scale-95'
                   >
-                    <DialogPanel class='text-center z-30 flex flex-col items-center w-full max-w-md py-6 px-20 my-8 overflow-hidden align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
+                    <DialogPanel class='text-center z-30 flex flex-col items-center w-full max-w-md py-6 px-14 md:px-20 my-8 overflow-hidden align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
                       <img src='/img/staff/wamo.jpg' class='rounded-full w-24 mb-4' />
                       <DialogTitle as='h3' class='text-2xl font-bold'>
                         wamo
@@ -393,7 +452,7 @@ const Winter2022: Component<{}> = () => {
                     leaveFrom='opacity-100 scale-100'
                     leaveTo='opacity-0 scale-95'
                   >
-                    <DialogPanel class='text-center z-30 flex flex-col items-center w-full max-w-md py-6 px-20 my-8 overflow-hidden align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
+                    <DialogPanel class='text-center z-30 flex flex-col items-center w-full max-w-md py-6 px-14 md:px-20 my-8 overflow-hidden align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
                       <img src='/img/staff/pnuts2872ykr.jpg' class='rounded-full w-24 mb-4' />
                       <DialogTitle as='h3' class='text-2xl font-bold'>
                         pnuts2872ykr
@@ -419,11 +478,11 @@ const Winter2022: Component<{}> = () => {
             </Transition>
           </div>
         </div>
-        <div>
-          <h2 class='font-bold text-3xl'>SNS</h2>
+        <div class='max-w-4xl mx-auto container px-4 py-16'>
+          <h2 class='text-4xl font-semibold font-futura'>SNS</h2>
           <div class='inline-flex flex-col gap-3 mt-5'>
             <a href='https://vcborn.com/youtube' target='_blank' rel='noopener noreferrer'>
-              <div class='flex items-center font-bold gap-3 bg-youtube rounded-full text-white px-8 py-2'>
+              <div class='flex items-center font-bold gap-3 bg-youtube rounded-full text-white px-8 py-2 duration-300 hover:opacity-80'>
                 <BsYoutube size={24} />
                 <span class='mb-1'>チャンネル登録</span>
               </div>
@@ -433,7 +492,7 @@ const Winter2022: Component<{}> = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <div class='flex items-center font-bold gap-3 bg-twitter rounded-full text-white px-8 py-2'>
+              <div class='flex items-center font-bold gap-3 bg-twitter rounded-full text-white px-8 py-2 duration-300 hover:opacity-80'>
                 <BsTwitter size={24} />
                 <span class='mb-1'>フォロー</span>
               </div>
@@ -443,7 +502,7 @@ const Winter2022: Component<{}> = () => {
               target='_blank'
               rel='noopener noreferrer'
             >
-              <div class='flex items-center font-bold gap-3 bg-twitter rounded-full text-white px-8 py-2'>
+              <div class='flex items-center font-bold gap-3 bg-twitter rounded-full text-white px-8 py-2 duration-300 hover:opacity-80'>
                 <BsTwitter size={24} />
                 <span class='mb-1'>#VCFes でツイート</span>
               </div>

@@ -1,6 +1,6 @@
 import { Component } from 'solid-js'
 
-const Footer: Component<{ title?: string }> = () => {
+const Footer: Component<{}> = () => {
   return (
     <>
       <footer>
