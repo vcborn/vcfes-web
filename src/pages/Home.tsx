@@ -5,18 +5,16 @@ import { NavLink } from 'solid-app-router'
 const Home: Component<{}> = () => {
   return (
     <div class='mt-16'>
-      <MetaProvider>
-        <Title>VCFes Portal</Title>
-        <Meta property='og:title' content='VCFes Portal' />
-        <Meta property='og:description' content='VCbornのオンラインイベント「VCFes」' />
-        <Meta property='description' content='VCbornのオンラインイベント「VCFes」' />
-        <Meta property='og:title' content='VCFes Portal' />
-        <Meta property='og:url' content='https://fes.vcborn.com' />
-        <Meta property='og:image' content='https://fes.vcborn.com/img/ogp.png' />
-        <Meta name='twitter:card' content='summary_large_image' />
-        <Meta name='twitter:image' content='https://fes.vcborn.com/img/ogp.png' />
-        <Meta name='twitter:site' content='@vcborn_support' />
-      </MetaProvider>
+      <Title>VCFes Portal</Title>
+      <Meta property='og:title' content='VCFes Portal' />
+      <Meta property='og:description' content='VCbornのオンラインイベント「VCFes」' />
+      <Meta property='description' content='VCbornのオンラインイベント「VCFes」' />
+      <Meta property='og:title' content='VCFes Portal' />
+      <Meta property='og:url' content='https://fes.vcborn.com' />
+      <Meta property='og:image' content='https://fes.vcborn.com/img/ogp.png' />
+      <Meta name='twitter:card' content='summary_large_image' />
+      <Meta name='twitter:image' content='https://fes.vcborn.com/img/ogp.png' />
+      <Meta name='twitter:site' content='@vcborn_support' />
       <div class='flex flex-col justify-center h-96 bg-gradient-to-br from-blue-900 to-black text-white'>
         <div class='max-w-5xl mx-auto container'>
           <div class='mx-4 flex flex-col gap-3'>

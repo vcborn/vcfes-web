@@ -20,18 +20,16 @@ const Winter2022: Component<{}> = () => {
   }
   return (
     <div class='mt-16'>
-      <MetaProvider>
-        <Title>VCFes Winter 2022</Title>
-        <Meta property='og:title' content='VCFes Winter 2022' />
-        <Meta property='og:description' content='VCbornのオンラインイベント「VCFes」' />
-        <Meta property='description' content='VCbornのオンラインイベント「VCFes」' />
-        <Meta property='og:title' content='VCFes Winter 2022' />
-        <Meta property='og:url' content='https://fes.vcborn.com/fes/winter2022' />
-        <Meta property='og:image' content='https://fes.vcborn.com/img/fes/winter2022.png' />
-        <Meta name='twitter:card' content='summary_large_image' />
-        <Meta name='twitter:image' content='https://fes.vcborn.com/img/fes/winter2022.png' />
-        <Meta name='twitter:site' content='@vcborn_support' />
-      </MetaProvider>
+      <Title>VCFes Winter 2022</Title>
+      <Meta property='og:title' content='VCFes Winter 2022' />
+      <Meta property='og:description' content='VCbornのオンラインイベント「VCFes」' />
+      <Meta property='description' content='VCbornのオンラインイベント「VCFes」' />
+      <Meta property='og:title' content='VCFes Winter 2022' />
+      <Meta property='og:url' content='https://fes.vcborn.com/fes/winter2022' />
+      <Meta property='og:image' content='https://fes.vcborn.com/img/fes/winter2022.png' />
+      <Meta name='twitter:card' content='summary_large_image' />
+      <Meta name='twitter:image' content='https://fes.vcborn.com/img/fes/winter2022.png' />
+      <Meta name='twitter:site' content='@vcborn_support' />
       <div class='flex flex-col justify-center h-[80vh] bg-gradient-to-br from-blue-900 to-black text-white'>
         <div class='max-w-5xl mx-auto container'>
           <div class='mx-4 flex flex-col items-center gap-3'>
