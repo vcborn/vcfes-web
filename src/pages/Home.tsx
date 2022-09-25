@@ -29,23 +29,31 @@ const Home: Component<{}> = () => {
         {/* <h2 class="text-3xl font-semibold">開催中のイベント</h2> */}
         <h2 class='text-3xl font-semibold'>開催予定のイベント</h2>
         <div class='my-10'>
-          <NavLink href='/fes/winter2022'>
+          <NavLink href='/fes/winter2022' aria-label='VCFes Winter 2022'>
             <img
+              alt='VCFes Winter 2022 Banner'
               class='hidden md:block shadow-lg duration-200 hover:shadow-md'
-              src='/img/banner/vcfeswin2022.png'
+              src='/img/banner/vcfeswin2022.jpg'
             />
             <img
+              alt='VCFes Winter 2022'
               class='block md:hidden shadow-lg duration-200 hover:shadow-md'
-              src='/img/banner/vcfeswin2022-sm.png'
+              src='/img/banner/vcfeswin2022-sm.jpg'
             />
           </NavLink>
         </div>
         <h2 class='text-3xl font-semibold'>過去のイベント</h2>
         <div class='my-10 grid grid-cols-1 md:grid-cols-3 gap-4'>
           <div>
-            <a href='https://vcborn-fes2022.pages.dev' target='_blank' rel='noopener noreferrer'>
+            <a
+              href='https://vcborn-fes2022.pages.dev'
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='VCFes Summber 2022'
+            >
               <img
-                src='/img/fes/summer2022.png'
+                alt='VCFes Summer 2022'
+                src='/img/fes/summer2022.jpg'
                 class='shadow rounded-md duration-200 hover:shadow-sm'
               />
             </a>

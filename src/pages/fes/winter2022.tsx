@@ -149,7 +149,8 @@ const Winter2022: Component<{}> = () => {
             <button class='focus:outline-none group' onClick={() => openModal('game')}>
               <div>
                 <img
-                  src='/img/events/game.png'
+                  alt='ゲーム大会'
+                  src='/img/events/game.jpg'
                   class='mb-2 rounded-md shadow-md duration-200 group-hover:shadow'
                 />
                 <h3>ゲーム大会</h3>
@@ -158,7 +159,8 @@ const Winter2022: Component<{}> = () => {
             <button class='focus:outline-none group' onClick={() => openModal('quiz')}>
               <div>
                 <img
-                  src='/img/events/quiz.png'
+                  alt='クイズ大会'
+                  src='/img/events/quiz.jpg'
                   class='mb-2 rounded-md shadow-md duration-200 group-hover:shadow'
                 />
                 <h3>クイズ大会</h3>
@@ -167,7 +169,8 @@ const Winter2022: Component<{}> = () => {
             <button class='focus:outline-none group' onClick={() => openModal('food')}>
               <div>
                 <img
-                  src='/img/events/food.png'
+                  alt='飯テロ'
+                  src='/img/events/food.jpg'
                   class='mb-2 rounded-md shadow-md duration-200 group-hover:shadow'
                 />
                 <h3>飯テロ</h3>
@@ -198,7 +201,7 @@ const Winter2022: Component<{}> = () => {
                   leaveTo='opacity-0 scale-95'
                 >
                   <DialogPanel class='z-30 inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
-                    <img src='/img/events/game.png' class='rounded-md mb-4' />
+                    <img alt='ゲーム大会' src='/img/events/game.jpg' class='rounded-md mb-4' />
                     <DialogTitle as='h3' class='text-xl font-bold'>
                       ゲーム大会
                     </DialogTitle>
@@ -242,7 +245,7 @@ const Winter2022: Component<{}> = () => {
                   leaveTo='opacity-0 scale-95'
                 >
                   <DialogPanel class='z-30 inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
-                    <img src='/img/events/quiz.png' class='rounded-md mb-4' />
+                    <img alt='クイズ大会' src='/img/events/quiz.jpg' class='rounded-md mb-4' />
                     <DialogTitle as='h3' class='text-xl font-bold'>
                       クイズ大会
                     </DialogTitle>
@@ -286,7 +289,7 @@ const Winter2022: Component<{}> = () => {
                   leaveTo='opacity-0 scale-95'
                 >
                   <DialogPanel class='z-30 inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
-                    <img src='/img/events/food.png' class='rounded-md mb-4' />
+                    <img alt='飯テロ' src='/img/events/food.jpg' class='rounded-md mb-4' />
                     <DialogTitle as='h3' class='text-xl font-bold'>
                       飯テロ
                     </DialogTitle>
@@ -315,6 +318,7 @@ const Winter2022: Component<{}> = () => {
             <button class='focus:outline-none group' onClick={() => openModal('mushroom')}>
               <div class='flex flex-col items-center gap-3 text-xl'>
                 <img
+                  alt='mushroom'
                   src='/img/staff/mushroom.jpg'
                   class='rounded-full w-36 h-36 duration-200 overflow-hidden object-cover group-hover:scale-110'
                 />
@@ -324,6 +328,7 @@ const Winter2022: Component<{}> = () => {
             <button class='focus:outline-none group' onClick={() => openModal('wamo')}>
               <div class='flex flex-col items-center gap-3 text-xl'>
                 <img
+                  alt='wamo'
                   src='/img/staff/wamo.jpg'
                   class='rounded-full w-36 h-36 duration-200 overflow-hidden object-cover group-hover:scale-110'
                 />
@@ -333,6 +338,7 @@ const Winter2022: Component<{}> = () => {
             <button class='focus:outline-none group' onClick={() => openModal('pnuts2872ykr')}>
               <div class='flex flex-col items-center gap-3 text-xl'>
                 <img
+                  alt='pnuts2872ykr'
                   src='/img/staff/pnuts2872ykr.jpg'
                   class='rounded-full w-36 h-36 duration-200 overflow-hidden object-cover group-hover:scale-110'
                 />
@@ -363,7 +369,11 @@ const Winter2022: Component<{}> = () => {
                     leaveTo='opacity-0 scale-95'
                   >
                     <DialogPanel class='text-center z-30 flex flex-col items-center w-full max-w-md py-6 px-14 md:px-20 my-8 overflow-hidden align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
-                      <img src='/img/staff/mushroom.jpg' class='rounded-full w-24 mb-4' />
+                      <img
+                        alt='mushroom'
+                        src='/img/staff/mushroom.jpg'
+                        class='rounded-full w-24 mb-4'
+                      />
                       <DialogTitle as='h3' class='text-2xl font-bold'>
                         mushroom
                       </DialogTitle>
@@ -408,7 +418,7 @@ const Winter2022: Component<{}> = () => {
                     leaveTo='opacity-0 scale-95'
                   >
                     <DialogPanel class='text-center z-30 flex flex-col items-center w-full max-w-md py-6 px-14 md:px-20 my-8 overflow-hidden align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
-                      <img src='/img/staff/wamo.jpg' class='rounded-full w-24 mb-4' />
+                      <img alt='wamo' src='/img/staff/wamo.jpg' class='rounded-full w-24 mb-4' />
                       <DialogTitle as='h3' class='text-2xl font-bold'>
                         wamo
                       </DialogTitle>
@@ -453,7 +463,11 @@ const Winter2022: Component<{}> = () => {
                     leaveTo='opacity-0 scale-95'
                   >
                     <DialogPanel class='text-center z-30 flex flex-col items-center w-full max-w-md py-6 px-14 md:px-20 my-8 overflow-hidden align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
-                      <img src='/img/staff/pnuts2872ykr.jpg' class='rounded-full w-24 mb-4' />
+                      <img
+                        alt='pnuts2872ykr'
+                        src='/img/staff/pnuts2872ykr.jpg'
+                        class='rounded-full w-24 mb-4'
+                      />
                       <DialogTitle as='h3' class='text-2xl font-bold'>
                         pnuts2872ykr
                       </DialogTitle>

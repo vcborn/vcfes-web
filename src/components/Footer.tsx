@@ -9,7 +9,7 @@ const Footer: Component<{}> = () => {
             CopyRight &copy; 2022{' '}
             <a
               href='https://vcborn.com'
-              class='text-cyan-500 duration-200 hover:text-cyan-700'
+              class='text-cyan-600 duration-200 hover:text-cyan-800'
               rel='noopener noreferrer'
               target='_blank'
             >
