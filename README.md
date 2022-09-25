@@ -7,3 +7,4 @@ VCFesの公式サイト。
 - Solid.js
 - Tailwind CSS
 - TypeScript
+- GSAP
