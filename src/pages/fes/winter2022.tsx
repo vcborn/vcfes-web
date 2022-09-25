@@ -11,9 +11,14 @@ import {
 } from 'solid-headless'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import supportsWebP from 'supports-webp'
 
 const Winter2022: Component<{}> = () => {
   const [open, setOpen] = createSignal('')
+  const [support, isSupport] = createSignal(false)
+  supportsWebP.then((supported) => {
+    isSupport(supported)
+  })
   createEffect(() => {
     document.querySelectorAll('.title-anim').forEach((item, i) => {
       gsap.from(item, {
@@ -36,7 +41,7 @@ const Winter2022: Component<{}> = () => {
       <Title>VCFes Winter 2022</Title>
       <Meta property='og:title' content='VCFes Winter 2022' />
       <Meta property='og:description' content='VCbornのオンラインイベント「VCFes」' />
-      <Meta property='description' content='VCbornのオンラインイベント「VCFes」' />
+      <Meta name='description' content='VCbornのオンラインイベント「VCFes」' />
       <Meta property='og:title' content='VCFes Winter 2022' />
       <Meta property='og:url' content='https://fes.vcborn.com/fes/winter2022' />
       <Meta property='og:image' content='https://fes.vcborn.com/img/fes/winter2022.png' />
@@ -150,7 +155,7 @@ const Winter2022: Component<{}> = () => {
               <div>
                 <img
                   alt='ゲーム大会'
-                  src='/img/events/game.jpg'
+                  src={`/img/events/game.${support() ? 'webp' : 'jpg'}`}
                   class='mb-2 rounded-md shadow-md duration-200 group-hover:shadow'
                 />
                 <h3>ゲーム大会</h3>
@@ -160,7 +165,7 @@ const Winter2022: Component<{}> = () => {
               <div>
                 <img
                   alt='クイズ大会'
-                  src='/img/events/quiz.jpg'
+                  src={`/img/events/quiz.${support() ? 'webp' : 'jpg'}`}
                   class='mb-2 rounded-md shadow-md duration-200 group-hover:shadow'
                 />
                 <h3>クイズ大会</h3>
@@ -170,7 +175,7 @@ const Winter2022: Component<{}> = () => {
               <div>
                 <img
                   alt='飯テロ'
-                  src='/img/events/food.jpg'
+                  src={`/img/events/food.${support() ? 'webp' : 'jpg'}`}
                   class='mb-2 rounded-md shadow-md duration-200 group-hover:shadow'
                 />
                 <h3>飯テロ</h3>
@@ -201,7 +206,11 @@ const Winter2022: Component<{}> = () => {
                   leaveTo='opacity-0 scale-95'
                 >
                   <DialogPanel class='z-30 inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
-                    <img alt='ゲーム大会' src='/img/events/game.jpg' class='rounded-md mb-4' />
+                    <img
+                      alt='ゲーム大会'
+                      src={`/img/events/game.${support() ? 'webp' : 'jpg'}`}
+                      class='rounded-md mb-4'
+                    />
                     <DialogTitle as='h3' class='text-xl font-bold'>
                       ゲーム大会
                     </DialogTitle>
@@ -245,7 +254,11 @@ const Winter2022: Component<{}> = () => {
                   leaveTo='opacity-0 scale-95'
                 >
                   <DialogPanel class='z-30 inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
-                    <img alt='クイズ大会' src='/img/events/quiz.jpg' class='rounded-md mb-4' />
+                    <img
+                      alt='クイズ大会'
+                      src={`/img/events/quiz.${support() ? 'webp' : 'jpg'}`}
+                      class='rounded-md mb-4'
+                    />
                     <DialogTitle as='h3' class='text-xl font-bold'>
                       クイズ大会
                     </DialogTitle>
@@ -289,7 +302,11 @@ const Winter2022: Component<{}> = () => {
                   leaveTo='opacity-0 scale-95'
                 >
                   <DialogPanel class='z-30 inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform shadow-xl rounded-2xl bg-white'>
-                    <img alt='飯テロ' src='/img/events/food.jpg' class='rounded-md mb-4' />
+                    <img
+                      alt='飯テロ'
+                      src={`/img/events/food.${support() ? 'webp' : 'jpg'}`}
+                      class='rounded-md mb-4'
+                    />
                     <DialogTitle as='h3' class='text-xl font-bold'>
                       飯テロ
                     </DialogTitle>

@@ -1,14 +1,19 @@
-import { Component } from 'solid-js'
+import { Component, createSignal, createEffect } from 'solid-js'
 import { MetaProvider, Title, Meta } from 'solid-meta'
 import { NavLink } from 'solid-app-router'
+import supportsWebP from 'supports-webp'
 
 const Home: Component<{}> = () => {
+  const [support, isSupport] = createSignal(false)
+  supportsWebP.then((supported) => {
+    isSupport(supported)
+  })
   return (
     <div class='mt-16'>
       <Title>VCFes Portal</Title>
       <Meta property='og:title' content='VCFes Portal' />
       <Meta property='og:description' content='VCbornのオンラインイベント「VCFes」' />
-      <Meta property='description' content='VCbornのオンラインイベント「VCFes」' />
+      <Meta name='description' content='VCbornのオンラインイベント「VCFes」' />
       <Meta property='og:title' content='VCFes Portal' />
       <Meta property='og:url' content='https://fes.vcborn.com' />
       <Meta property='og:image' content='https://fes.vcborn.com/img/ogp.png' />
@@ -33,12 +38,12 @@ const Home: Component<{}> = () => {
             <img
               alt='VCFes Winter 2022 Banner'
               class='hidden md:block shadow-lg duration-200 hover:shadow-md'
-              src='/img/banner/vcfeswin2022.jpg'
+              src={`/img/banner/vcfeswin2022.${support() ? 'webp' : 'jpg'}`}
             />
             <img
               alt='VCFes Winter 2022'
               class='block md:hidden shadow-lg duration-200 hover:shadow-md'
-              src='/img/banner/vcfeswin2022-sm.jpg'
+              src={`/img/banner/vcfeswin2022-sm.${support() ? 'webp' : 'jpg'}`}
             />
           </NavLink>
         </div>
@@ -53,7 +58,7 @@ const Home: Component<{}> = () => {
             >
               <img
                 alt='VCFes Summer 2022'
-                src='/img/fes/summer2022.jpg'
+                src={`/img/fes/summer2022.${support() ? 'webp' : 'jpg'}`}
                 class='shadow rounded-md duration-200 hover:shadow-sm'
               />
             </a>
