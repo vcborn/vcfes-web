@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="//www.nsb.com/wp-content/plugins/wordpress-seo-premium/css/main-sitemap.xsl"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
     <loc>https://fes.vcborn.com/</loc>
-    <lastmod>2022-09-25T15:21:17.001Z</lastmod>
-  </sitemap>
-  <sitemap>
+    <lastmod>2022-09-25T15:25:58.880Z</lastmod>
+  </url>
+  <url>
     <loc>https://fes.vcborn.com/fes/winter2022</loc>
-    <lastmod>2022-09-25T15:21:17.001Z</lastmod>
-  </sitemap>
-</sitemapindex>
+    <lastmod>2022-09-25T15:25:58.880Z</lastmod>
+  </url>
+</urlset>
