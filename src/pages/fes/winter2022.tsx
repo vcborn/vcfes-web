@@ -74,12 +74,9 @@ const Winter2022: Component<{}> = () => {
               <span class='title-anim'>1</span>
               <span class='title-anim'>2</span>
               <span class='title-anim'>月</span>
-              <span class='title-anim'>&nbsp;</span>
-              <span class='title-anim'>O</span>
-              <span class='title-anim'>R</span>
-              <span class='title-anim'>&nbsp;</span>
-              <span class='title-anim'>1</span>
-              <span class='title-anim'>月</span>
+              <span class='title-anim'>2</span>
+              <span class='title-anim'>5</span>
+              <span class='title-anim'>日</span>
             </p>
           </div>
         </div>
@@ -115,11 +112,15 @@ const Winter2022: Component<{}> = () => {
                 <td>未決定</td>
               </tr>
               <tr>
+                <td class='border-r border-black w-48'>13:30~</td>
+                <td>未決定</td>
+              </tr>
+              <tr>
                 <td class='border-r border-black w-48'>14:00~</td>
                 <td>未決定</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-48'>15:00~</td>
+                <td class='border-r border-black w-48'>14:30~</td>
                 <td>未決定</td>
               </tr>
             </tbody>
@@ -138,11 +139,15 @@ const Winter2022: Component<{}> = () => {
                 <td>未決定</td>
               </tr>
               <tr>
+                <td class='border-r border-black w-48'>22:30~</td>
+                <td>未決定</td>
+              </tr>
+              <tr>
                 <td class='border-r border-black w-48'>23:00~</td>
                 <td>未決定</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-48'>0:00~</td>
+                <td class='border-r border-black w-48'>23:30~</td>
                 <td>未決定</td>
               </tr>
             </tbody>
