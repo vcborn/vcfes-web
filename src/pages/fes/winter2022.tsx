@@ -10,7 +10,6 @@ import {
   TransitionChild,
 } from 'solid-headless'
 import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
 import supportsWebP from 'supports-webp'
 
 const Winter2022: Component<{}> = () => {
@@ -29,6 +28,43 @@ const Winter2022: Component<{}> = () => {
         delay: i * 0.03,
       })
     })
+    let wrap = document.querySelector('.snow-wrap')
+    let total = 30
+    if (wrap) {
+      let w = wrap.getBoundingClientRect().width
+      let h = wrap.getBoundingClientRect().height
+      console.log(w, h)
+      gsap.set('.snow-wrap', {
+        perspective: 600,
+      })
+      const R = (min: number, max: number) => {
+        return min + Math.random() * (max - min)
+      }
+      const animm = (elm: HTMLElement) => {
+        gsap.to(elm, R(6, 15), { y: h + 100, ease: 'none', repeat: -1, delay: -15 })
+        gsap.to(elm, R(4, 8), {
+          x: '+=100',
+          rotationZ: R(0, 180),
+          repeat: -1,
+          yoyo: true,
+          ease: 'sine.inOut',
+        })
+        gsap.to(elm, R(2, 8), {
+          rotationX: R(0, 360),
+          rotationY: R(0, 360),
+          repeat: -1,
+          yoyo: true,
+          ease: 'sine.inOut',
+          delay: -5,
+        })
+      }
+      for (let i = 0; i < total; i++) {
+        let Div = document.createElement('div')
+        gsap.set(Div, { attr: { class: 'snow' }, x: R(0, w), y: R(-200, -150), z: R(-200, 200) })
+        wrap.appendChild(Div)
+        animm(Div)
+      }
+    }
   })
   function closeModal() {
     setOpen('')
@@ -48,7 +84,7 @@ const Winter2022: Component<{}> = () => {
       <Meta name='twitter:card' content='summary_large_image' />
       <Meta name='twitter:image' content='https://fes.vcborn.com/img/fes/winter2022.png' />
       <Meta name='twitter:site' content='@vcborn_support' />
-      <div class='flex flex-col justify-center h-[80vh] bg-gradient-to-br from-blue-900 to-black text-white'>
+      <div class='snow-wrap overflow-hidden flex flex-col justify-center h-[80vh] bg-gradient-to-br from-blue-900 to-black text-white'>
         <div class='max-w-5xl mx-auto container'>
           <div class='mx-4 flex flex-col items-center gap-3'>
             <h2 class='flex flex-wrap text-7xl pb-2 font-bold'>
