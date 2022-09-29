@@ -145,19 +145,15 @@ const Winter2022: Component<{}> = () => {
             <tbody>
               <tr>
                 <td class='border-r border-black w-48'>13:00~</td>
-                <td>未決定</td>
+                <td>昼の部オープニング</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-48'>13:30~</td>
-                <td>未決定</td>
+                <td class='border-r border-black w-48'>13:15~</td>
+                <td>ゲーム大会（１）</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-48'>14:00~</td>
-                <td>未決定</td>
-              </tr>
-              <tr>
-                <td class='border-r border-black w-48'>14:30~</td>
-                <td>未決定</td>
+                <td class='border-r border-black w-48'>14:20~</td>
+                <td>クイズ大会</td>
               </tr>
             </tbody>
           </table>
@@ -172,19 +168,27 @@ const Winter2022: Component<{}> = () => {
             <tbody>
               <tr>
                 <td class='border-r border-black w-48'>22:00~</td>
-                <td>未決定</td>
+                <td>夜の部オープニング</td>
+              </tr>
+              <tr>
+                <td class='border-r border-black w-48'>22:10~</td>
+                <td>飯テロ</td>
               </tr>
               <tr>
                 <td class='border-r border-black w-48'>22:30~</td>
-                <td>未決定</td>
+                <td>開発進捗発表会</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-48'>23:00~</td>
-                <td>未決定</td>
+                <td class='border-r border-black w-48'>23:10~</td>
+                <td>雑談・休憩</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-48'>23:30~</td>
-                <td>未決定</td>
+                <td class='border-r border-black w-48'>23:20~</td>
+                <td>ゲーム大会（２）</td>
+              </tr>
+              <tr>
+                <td class='border-r border-black w-48'>23:50~</td>
+                <td>エンディング</td>
               </tr>
             </tbody>
           </table>
