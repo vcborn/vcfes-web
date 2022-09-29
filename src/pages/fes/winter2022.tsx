@@ -33,7 +33,6 @@ const Winter2022: Component<{}> = () => {
     if (wrap) {
       let w = wrap.getBoundingClientRect().width
       let h = wrap.getBoundingClientRect().height
-      console.log(w, h)
       gsap.set('.snow-wrap', {
         perspective: 600,
       })
@@ -144,15 +143,15 @@ const Winter2022: Component<{}> = () => {
             </thead>
             <tbody>
               <tr>
-                <td class='border-r border-black w-48'>13:00~</td>
+                <td class='border-r border-black w-24 md:w-48'>13:00~</td>
                 <td>昼の部オープニング</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-48'>13:15~</td>
+                <td class='border-r border-black w-24 md:w-48'>13:15~</td>
                 <td>ゲーム大会（１）</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-48'>14:20~</td>
+                <td class='border-r border-black w-24 md:w-48'>14:20~</td>
                 <td>クイズ大会</td>
               </tr>
             </tbody>
@@ -167,27 +166,27 @@ const Winter2022: Component<{}> = () => {
             </thead>
             <tbody>
               <tr>
-                <td class='border-r border-black w-48'>22:00~</td>
+                <td class='border-r border-black w-24 md:w-48'>22:00~</td>
                 <td>夜の部オープニング</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-48'>22:10~</td>
+                <td class='border-r border-black w-24 md:w-48'>22:10~</td>
                 <td>飯テロ</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-48'>22:30~</td>
+                <td class='border-r border-black w-24 md:w-48'>22:30~</td>
                 <td>開発進捗発表会</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-48'>23:10~</td>
+                <td class='border-r border-black w-24 md:w-48'>23:10~</td>
                 <td>雑談・休憩</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-48'>23:20~</td>
+                <td class='border-r border-black w-24 md:w-48'>23:20~</td>
                 <td>ゲーム大会（２）</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-48'>23:50~</td>
+                <td class='border-r border-black w-24 md:w-48'>23:50~</td>
                 <td>エンディング</td>
               </tr>
             </tbody>
