@@ -147,12 +147,16 @@ const Winter2022: Component<{}> = () => {
                 <td>昼の部オープニング</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-24 md:w-48'>13:15~</td>
+                <td class='border-r border-black w-24 md:w-48'>13:10~</td>
                 <td>ゲーム大会（１）</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-24 md:w-48'>14:20~</td>
+                <td class='border-r border-black w-24 md:w-48'>14:30~</td>
                 <td>クイズ大会</td>
+              </tr>
+              <tr>
+                <td class='border-r border-black w-24 md:w-48'>14:50~</td>
+                <td>昼の部エンディング</td>
               </tr>
             </tbody>
           </table>
@@ -187,7 +191,7 @@ const Winter2022: Component<{}> = () => {
               </tr>
               <tr>
                 <td class='border-r border-black w-24 md:w-48'>23:50~</td>
-                <td>エンディング</td>
+                <td>夜の部エンディング</td>
               </tr>
             </tbody>
           </table>
