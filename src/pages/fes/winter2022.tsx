@@ -182,11 +182,11 @@ const Winter2022: Component<{}> = () => {
                 <td>開発進捗発表会</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-24 md:w-48'>23:10~</td>
+                <td class='border-r border-black w-24 md:w-48'>22:40~</td>
                 <td>雑談・休憩</td>
               </tr>
               <tr>
-                <td class='border-r border-black w-24 md:w-48'>23:20~</td>
+                <td class='border-r border-black w-24 md:w-48'>22:50~</td>
                 <td>ゲーム大会（２）</td>
               </tr>
               <tr>
