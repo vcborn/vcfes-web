@@ -444,7 +444,7 @@ const Winter2022: Component<{}> = () => {
                       </DialogTitle>
                       <div class='mt-4 text-base'>
                         <p class='text-xl font-bold'>司会</p>
-                        <p>しゃべりがうまい</p>
+                        <p>イベント以外何もしてない人</p>
                       </div>
 
                       <div class='mt-8'>
