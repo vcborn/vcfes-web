@@ -560,7 +560,7 @@ const Winter2022: Component<{}> = () => {
         <div class='max-w-4xl mx-auto container px-4 py-16'>
           <h2 class='text-4xl font-semibold font-futura'>SNS</h2>
           <div class='inline-flex flex-col gap-3 mt-5'>
-            <a href='https://vcborn.com/youtube' target='_blank' rel='noopener noreferrer'>
+            <a href='https://www.youtube.com/@vcborn' target='_blank' rel='noopener noreferrer'>
               <div class='flex items-center font-bold gap-3 bg-youtube rounded-full text-white px-8 py-2 duration-300 hover:opacity-80'>
                 <BsYoutube size={24} />
                 <span class='mb-1'>チャンネル登録</span>
