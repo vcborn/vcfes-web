@@ -117,17 +117,14 @@ const Winter2022: Component<{}> = () => {
         </div>
       </div>
       <div class='mt-10 mb-20 text-center schedule-trigger'>
-        {/*<img src='/img/antenna.png' class='h-36 mx-auto' />
-        <div class='relative bg-blue-900 inline-block text-white rounded-lg px-8 py-7 overflow-hidden mb-10'>
-          <h2 class='absolute text-xl font-bold bg-black -rotate-12 pl-12 pr-64 py-1 -left-2 top-2'>
-            ライブ配信
-          </h2>
+        {/*<h2 class='text-4xl font-semibold font-futura'>LIVE</h2>
+        <img src='/img/antenna.png' class='h-24 md:h-36 mx-auto mt-8' />
+        <div class='relative bg-blue-900 inline-block text-white rounded-lg px-5 py-5 md:px-8 md:py-7 overflow-hidden mb-10 max-w-2xl w-full'>
           <iframe
-            width='560'
-            height='315'
             src='https://www.youtube.com/embed/jfKfPfyJRdk'
             title='YouTube video player'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            class='aspect-video block w-full'
             allowfullscreen
           ></iframe>
   </div>*/}
@@ -584,6 +581,16 @@ const Winter2022: Component<{}> = () => {
               <div class='flex items-center font-bold gap-3 bg-twitter rounded-full text-white px-8 py-2 duration-300 hover:opacity-80'>
                 <BsTwitter size={24} />
                 <span class='mb-1'>#VCFes でツイート</span>
+              </div>
+            </a>
+            <a
+              href='https://twitter.com/intent/tweet?hashtags=VCFes22W&related=vcborn_support&url=https%3A%2F%2Ffes.vcborn.com%2Ffes%2Fwinter2022'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <div class='flex items-center font-bold gap-3 bg-twitter rounded-full text-white px-8 py-2 duration-300 hover:opacity-80'>
+                <BsTwitter size={24} />
+                <span class='mb-1'>#VCFes22W でツイート</span>
               </div>
             </a>
           </div>

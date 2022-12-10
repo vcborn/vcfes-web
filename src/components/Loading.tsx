@@ -68,7 +68,7 @@ const Loading: Component<{}> = () => {
   return (
     <>
       <div
-        class='absolute flex items-center justify-center top-0 z-50 h-screen w-full bg-gradient-to-br from-blue-900 to-black loading'
+        class='fixed flex items-center justify-center top-0 z-50 h-screen w-full bg-gradient-to-br from-blue-900 to-black loading'
         id='loading'
       >
         <div class='absolute z-20 w-24 h-24 md:w-48 md:h-48 rounded-full bg-white flex items-center justify-center circle-icon'>
