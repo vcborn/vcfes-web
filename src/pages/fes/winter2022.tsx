@@ -1,6 +1,7 @@
 import { Component, createSignal, createEffect } from 'solid-js'
-import { MetaProvider, Title, Meta } from 'solid-meta'
+import { Title, Meta } from 'solid-meta'
 import { BsYoutube, BsTwitter } from 'solid-icons/bs'
+import { BiSolidBuilding } from 'solid-icons/bi'
 import {
   Dialog,
   DialogOverlay,
@@ -128,6 +129,7 @@ const Winter2022: Component<{}> = () => {
             allowfullscreen
           ></iframe>
   </div>*/}
+
         <div class='schedule max-w-4xl mx-auto container px-4'>
           <h2 class='text-4xl font-semibold font-futura'>TIME TABLE</h2>
           <table class='shadow-md border-black border-collapse w-full md:w-3/4 mx-auto my-10 text-lg'>
@@ -552,6 +554,36 @@ const Winter2022: Component<{}> = () => {
                 </div>
               </Dialog>
             </Transition>
+          </div>
+        </div>
+        <div class='mx-auto container max-w-2xl px-4 mt-16'>
+          <h2 class='text-4xl font-semibold font-futura'>VENUE</h2>
+          <h3 class='text-2xl font-semibold my-4'>昼の部</h3>
+          <div class='flex gap-3 items-center'>
+            <div class='p-2.5 bg-cyan-600 inline-block rounded-full'>
+              <BiSolidBuilding class='fill-white' size={40} />
+            </div>
+            <a
+              class='text-xl pb-1 font-medium'
+              href='https://goo.gl/maps/WmwszFX6pchHCbeD8'
+              rel='noopener noreferrer'
+              target='_blank'
+            >
+              東京都新宿区西新宿7-10-17 新宿ダイカンプラザB館 1003号室
+            </a>
+          </div>
+          <div class='flex gap-3 items-center my-4'>
+            <div class='p-3.5 bg-[#ff0000] inline-block rounded-full'>
+              <BsYoutube class='fill-white' size={30} />
+            </div>
+            <p class='text-xl pb-1 font-medium'>YouTube Live</p>
+          </div>
+          <h3 class='text-2xl font-semibold my-4'>夜の部</h3>
+          <div class='flex gap-3 items-center my-4'>
+            <div class='p-3.5 bg-[#ff0000] inline-block rounded-full'>
+              <BsYoutube class='fill-white' size={30} />
+            </div>
+            <p class='text-xl pb-1 font-medium'>YouTube Live</p>
           </div>
         </div>
         <div class='max-w-4xl mx-auto container px-4 py-16'>
