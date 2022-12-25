@@ -118,17 +118,17 @@ const Winter2022: Component<{}> = () => {
         </div>
       </div>
       <div class='mt-10 mb-20 text-center schedule-trigger'>
-        {/*<h2 class='text-4xl font-semibold font-futura'>LIVE</h2>
+        <h2 class='text-4xl font-semibold font-futura'>LIVE</h2>
         <img src='/img/antenna.png' class='h-24 md:h-36 mx-auto mt-8' />
         <div class='relative bg-blue-900 inline-block text-white rounded-lg px-5 py-5 md:px-8 md:py-7 overflow-hidden mb-10 max-w-2xl w-full'>
           <iframe
-            src='https://www.youtube.com/embed/jfKfPfyJRdk'
+            src='https://www.youtube.com/embed/sZp_Dj3-iEw'
             title='YouTube video player'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             class='aspect-video block w-full'
             allowfullscreen
           ></iframe>
-  </div>*/}
+  </div>
 
         <div class='schedule max-w-4xl mx-auto container px-4'>
           <h2 class='text-4xl font-semibold font-futura'>TIME TABLE</h2>
