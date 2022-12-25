@@ -122,7 +122,7 @@ const Winter2022: Component<{}> = () => {
         <img src='/img/antenna.png' class='h-24 md:h-36 mx-auto mt-8' />
         <div class='relative bg-blue-900 inline-block text-white rounded-lg px-5 py-5 md:px-8 md:py-7 overflow-hidden mb-10 max-w-2xl w-full'>
           <iframe
-            src='https://www.youtube.com/embed/sZp_Dj3-iEw'
+            src='https://www.youtube.com/embed/nBXf6kwpy0k'
             title='YouTube video player'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
             class='aspect-video block w-full'
