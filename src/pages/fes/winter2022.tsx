@@ -118,7 +118,7 @@ const Winter2022: Component<{}> = () => {
         </div>
       </div>
       <div class='mt-10 mb-20 text-center schedule-trigger'>
-        <h2 class='text-4xl font-semibold font-futura'>LIVE</h2>
+        <h2 class='text-4xl font-semibold font-futura'>ARCHIVE</h2>
         <img src='/img/antenna.png' class='h-24 md:h-36 mx-auto mt-8' />
         <div class='relative bg-blue-900 inline-block text-white rounded-lg px-5 py-5 md:px-8 md:py-7 overflow-hidden mb-10 max-w-2xl w-full'>
           <iframe
