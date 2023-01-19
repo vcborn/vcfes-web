@@ -32,7 +32,7 @@ const Home: Component<{}> = () => {
       </div>
       <div class='px-4 max-w-5xl mx-auto container mt-10 mb-20'>
         {/* <h2 class="text-3xl font-semibold">開催中のイベント</h2> */}
-        <h2 class='text-3xl font-semibold'>開催予定のイベント</h2>
+        {/* <h2 class='text-3xl font-semibold'>開催予定のイベント</h2> 
         <div class='my-10'>
           <NavLink href='/fes/winter2022' aria-label='VCFes Winter 2022'>
             <img
@@ -47,8 +47,17 @@ const Home: Component<{}> = () => {
             />
           </NavLink>
         </div>
+        */}
+        
         <h2 class='text-3xl font-semibold'>過去のイベント</h2>
         <div class='my-10 grid grid-cols-1 md:grid-cols-3 gap-4'>
+          <NavLink href='/fes/winter2022' aria-label='VCFes Winter 2022'>
+            <img
+              alt='VCFes Winter 2022'
+              class='shadow rounded-md duration-200 hover:shadow-sm'
+              src={`/img/banner/vcfeswin2022-sm.${support() ? 'webp' : 'jpg'}`}
+            />
+          </NavLink>
           <div>
             <a
               href='https://vcborn-fes2022.pages.dev'

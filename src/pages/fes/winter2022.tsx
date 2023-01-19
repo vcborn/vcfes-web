@@ -128,7 +128,7 @@ const Winter2022: Component<{}> = () => {
             class='aspect-video block w-full'
             allowfullscreen
           ></iframe>
-  </div>
+        </div>
 
         <div class='schedule max-w-4xl mx-auto container px-4'>
           <h2 class='text-4xl font-semibold font-futura'>TIME TABLE</h2>
