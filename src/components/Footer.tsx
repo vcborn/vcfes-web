@@ -1,17 +1,17 @@
-import { Component } from "solid-js";
+import { Component } from 'solid-js'
 
 const Footer: Component<{}> = () => {
   return (
     <>
       <footer>
-        <div class="px-4 container max-w-5xl mx-auto py-4">
+        <div class='px-4 container max-w-5xl mx-auto py-4'>
           <p>
-            CopyRight &copy; 2022{" "}
+            CopyRight &copy; 2023{' '}
             <a
-              href="https://vcborn.com"
-              class="text-blue-600 duration-200 hover:text-cyan-800"
-              rel="noopener noreferrer"
-              target="_blank"
+              href='https://vcborn.com'
+              class='text-blue-600 duration-200 hover:text-cyan-800'
+              rel='noopener noreferrer'
+              target='_blank'
             >
               VCborn
             </a>
@@ -20,7 +20,7 @@ const Footer: Component<{}> = () => {
         </div>
       </footer>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
