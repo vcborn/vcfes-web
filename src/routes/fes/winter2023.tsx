@@ -4,7 +4,7 @@ import { BsYoutube, BsBoxArrowUpRight } from 'solid-icons/bs'
 import { BsTwitterX } from '~/components/BsTwitterX'
 import supportsWebP from 'supports-webp'
 
-const Winter2022: Component<{}> = () => {
+const Winter2023: Component<{}> = () => {
   const [support, isSupport] = createSignal(false)
   supportsWebP.then((supported) => {
     isSupport(supported)
@@ -202,7 +202,7 @@ const Winter2022: Component<{}> = () => {
               </div>
             </a>
             <a
-              href='https://twitter.com/intent/tweet?hashtags=VCFes&related=vcborn_support&url=https%3A%2F%2Ffes.vcborn.com%2Ffes%2Fwinter2022'
+              href='https://twitter.com/intent/tweet?hashtags=VCFes&related=vcborn_support&url=https%3A%2F%2Ffes.vcborn.com%2Ffes%2Fwinter2023'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -212,7 +212,7 @@ const Winter2022: Component<{}> = () => {
               </div>
             </a>
             <a
-              href='https://twitter.com/intent/tweet?hashtags=VCFes22W&related=vcborn_support&url=https%3A%2F%2Ffes.vcborn.com%2Ffes%2Fwinter2022'
+              href='https://twitter.com/intent/tweet?hashtags=VCFes23W&related=vcborn_support&url=https%3A%2F%2Ffes.vcborn.com%2Ffes%2Fwinter2023'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -228,4 +228,4 @@ const Winter2022: Component<{}> = () => {
   )
 }
 
-export default Winter2022
+export default Winter2023
