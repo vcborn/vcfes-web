@@ -15,6 +15,16 @@ export default createHandler(() => (
             rel='stylesheet'
           />
           <link rel='stylesheet' href='https://use.typekit.net/gdc2fvk.css'></link>
+          <title data-sm>VCFes Portal</title>
+          <meta data-sm property='og:title' content='VCFes Portal' />
+          <meta data-sm property='og:description' content='VCbornのオンラインイベント「VCFes」' />
+          <meta data-sm name='description' content='VCbornのオンラインイベント「VCFes」' />
+          <meta data-sm property='og:title' content='VCFes Portal' />
+          <meta data-sm property='og:url' content='https://fes.vcborn.com' />
+          <meta data-sm property='og:image' content='https://fes.vcborn.com/img/ogp.png' />
+          <meta data-sm name='twitter:card' content='summary_large_image' />
+          <meta data-sm name='twitter:image' content='https://fes.vcborn.com/img/ogp.png' />
+          <meta data-sm name='twitter:site' content='@vcborn_support' />
           {assets}
         </head>
         <body>
