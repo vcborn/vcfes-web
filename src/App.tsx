@@ -1,5 +1,5 @@
 import type { Component } from 'solid-js'
-import { useRoutes, Router } from 'solid-app-router'
+import { useRoutes, Router } from '@solidjs/router'
 import { routes } from './routes'
 import { preventSmoothScrollOnTabbing } from './utils'
 import { AppContextProvider } from './AppContext'
