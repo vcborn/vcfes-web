@@ -135,7 +135,7 @@ const Winter2022: Component<{}> = () => {
               />
               <div>
                 <p>mushroom</p>
-                <p class='text-lg md:text-2xl font-sans opacity-80 mt-2'>紹介文をここに入力。</p>
+                <p class='text-lg md:text-2xl font-sans opacity-80 mt-2'>常に眠い</p>
               </div>
             </div>
             <div class='flex items-center gap-5 text-2xl md:text-4xl'>
