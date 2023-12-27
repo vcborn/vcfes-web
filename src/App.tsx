@@ -1,27 +1,21 @@
-import type { Component } from 'solid-js'
-import { useRoutes, Router } from 'solid-app-router'
-import { routes } from './routes'
-import { preventSmoothScrollOnTabbing } from './utils'
-import { AppContextProvider } from './AppContext'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Loading from './components/Loading'
+// @refresh reload
+import { Router } from "@solidjs/router";
+import { FileRoutes } from "@solidjs/start";
+import { Suspense } from "solid-js";
+import "./app.css";
+import Header from "./components/Header";
 
-const App: Component = () => {
-  const Routes = useRoutes(routes)
-  preventSmoothScrollOnTabbing()
+export default function App() {
   return (
-    <>
-      <Header />
-      <Loading />
-      <AppContextProvider>
-        <main>
-          <Routes />
-        </main>
-      </AppContextProvider>
-      <Footer />
-    </>
-  )
+    <Router
+      root={(props) => (
+        <>
+          <Header />
+          <Suspense>{props.children}</Suspense>
+        </>
+      )}
+    >
+      <FileRoutes />
+    </Router>
+  );
 }
-
-export default App

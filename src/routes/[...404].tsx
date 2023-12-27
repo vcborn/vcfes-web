@@ -1,11 +1,11 @@
-import { Component } from 'solid-js';
-import { Title } from 'solid-meta';
-import { IoHelpCircleOutline } from 'solid-icons/io';
+import { Component } from "solid-js";
+import { Title } from "@solidjs/meta";
+import { IoHelpCircleOutline } from "solid-icons/io";
 
 const NotFound: Component<{}> = () => {
   return (
     <>
-    <Title>404 | VCFes Portal</Title>
+      <Title>404 | VCFes Portal</Title>
       <div class="flex flex-col justify-center h-screen">
         <div class="container mx-auto max-w-5xl z-20">
           <div class="flex flex-col items-center">
