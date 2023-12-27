@@ -52,6 +52,7 @@ const Winter2022: Component<{}> = () => {
 
         <div class='schedule pr-4 pl-8 py-16 bg-rose-600 text-white'>
           <h2 class='text-5xl font-semibold font-futura'>TIME TABLE</h2>
+          <p class='font-bold text-2xl'>！このタイムテーブルは仮のものです！</p>
           <table class='border-collapse w-full mt-12 text-2xl'>
             <tbody>
               <tr>
