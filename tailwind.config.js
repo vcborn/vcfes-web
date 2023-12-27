@@ -7,6 +7,8 @@ module.exports = {
       fontFamily: {
         sans: ['Zen Kaku Gothic New', ...defaultTheme.fontFamily.sans],
         futura: ['futura-pt', ...defaultTheme.fontFamily.sans],
+        train: ['Train One', ...defaultTheme.fontFamily.sans],
+        barcode: ['"Libre Barcode 39"', ...defaultTheme.fontFamily.sans],
       },
     },
   },

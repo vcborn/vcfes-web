@@ -1,5 +1,5 @@
 import { Component, createSignal, createEffect } from 'solid-js'
-import { Title, Meta } from 'solid-meta'
+import { Title, Meta } from '@solidjs/meta'
 import { BsYoutube, BsTwitter } from 'solid-icons/bs'
 import { BiSolidBuilding } from 'solid-icons/bi'
 import {
@@ -9,7 +9,7 @@ import {
   DialogTitle,
   Transition,
   TransitionChild,
-} from 'solid-headless'
+} from 'terracotta'
 import gsap from 'gsap'
 import supportsWebP from 'supports-webp'
 
@@ -80,9 +80,9 @@ const Winter2022: Component<{}> = () => {
       <Meta name='description' content='VCbornのオンラインイベント「VCFes」' />
       <Meta property='og:title' content='VCFes Winter 2022' />
       <Meta property='og:url' content='https://fes.vcborn.com/fes/winter2022' />
-      <Meta property='og:image' content='https://fes.vcborn.com/img/fes/winter2022.png' />
+      <Meta property='og:image' content='https://fes.vcborn.com/img/banner/winter2022.png' />
       <Meta name='twitter:card' content='summary_large_image' />
-      <Meta name='twitter:image' content='https://fes.vcborn.com/img/fes/winter2022.png' />
+      <Meta name='twitter:image' content='https://fes.vcborn.com/img/banner/winter2022.png' />
       <Meta name='twitter:site' content='@vcborn_support' />
       <div class='snow-wrap overflow-hidden flex flex-col justify-center h-[80vh] bg-gradient-to-br from-blue-900 to-black text-white'>
         <div class='max-w-5xl mx-auto container'>

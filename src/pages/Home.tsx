@@ -1,6 +1,6 @@
-import { Component, createSignal, createEffect } from 'solid-js'
-import { MetaProvider, Title, Meta } from 'solid-meta'
-import { NavLink } from 'solid-app-router'
+import { Component, createSignal } from 'solid-js'
+import { Title, Meta } from '@solidjs/meta'
+import { A } from '@solidjs/router'
 import supportsWebP from 'supports-webp'
 
 const Home: Component<{}> = () => {
@@ -32,32 +32,31 @@ const Home: Component<{}> = () => {
       </div>
       <div class='px-4 max-w-5xl mx-auto container mt-10 mb-20'>
         {/* <h2 class="text-3xl font-semibold">開催中のイベント</h2> */}
-        {/* <h2 class='text-3xl font-semibold'>開催予定のイベント</h2> 
+        <h2 class='text-3xl font-semibold'>開催予定のイベント</h2>
         <div class='my-10'>
-          <NavLink href='/fes/winter2022' aria-label='VCFes Winter 2022'>
+          <A href='/fes/winter2023' aria-label='VCFes Winter 2023'>
             <img
-              alt='VCFes Winter 2022 Banner'
+              alt='VCFes Winter 2023 Banner'
               class='hidden md:block shadow-lg duration-200 hover:shadow-md'
-              src={`/img/banner/vcfeswin2022.${support() ? 'webp' : 'jpg'}`}
+              src={`/img/banner/winter2023.${support() ? 'webp' : 'jpg'}`}
             />
             <img
-              alt='VCFes Winter 2022'
+              alt='VCFes Winter 2023'
               class='block md:hidden shadow-lg duration-200 hover:shadow-md'
-              src={`/img/banner/vcfeswin2022-sm.${support() ? 'webp' : 'jpg'}`}
+              src={`/img/banner/winter2023-sm.${support() ? 'webp' : 'jpg'}`}
             />
-          </NavLink>
+          </A>
         </div>
-        */}
-        
+
         <h2 class='text-3xl font-semibold'>過去のイベント</h2>
         <div class='my-10 grid grid-cols-1 md:grid-cols-3 gap-4'>
-          <NavLink href='/fes/winter2022' aria-label='VCFes Winter 2022'>
+          <A href='/fes/winter2022' aria-label='VCFes Winter 2022'>
             <img
               alt='VCFes Winter 2022'
               class='shadow rounded-md duration-200 hover:shadow-sm'
-              src={`/img/banner/vcfeswin2022-sm.${support() ? 'webp' : 'jpg'}`}
+              src={`/img/banner/winter2022-sm.${support() ? 'webp' : 'jpg'}`}
             />
-          </NavLink>
+          </A>
           <div>
             <a
               href='https://vcborn-fes2022.pages.dev'

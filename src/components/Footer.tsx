@@ -6,7 +6,7 @@ const Footer: Component<{}> = () => {
       <footer>
         <div class='px-4 container max-w-5xl mx-auto py-4'>
           <p>
-            CopyRight &copy; 2022{' '}
+            CopyRight &copy; 2023{' '}
             <a
               href='https://vcborn.com'
               class='text-blue-600 duration-200 hover:text-cyan-800'
