@@ -147,7 +147,7 @@ const Winter2023: Component<{}> = () => {
               />
               <div>
                 <p>あんころもち</p>
-                <p class='text-lg md:text-2xl font-sans opacity-80 mt-2'>紹介文をここに入力。</p>
+                <p class='text-lg md:text-2xl font-sans opacity-80 mt-2'>何気に初登場</p>
               </div>
             </div>
             <div class='flex items-center gap-5 text-2xl md:text-4xl'>
