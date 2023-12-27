@@ -5,17 +5,10 @@ import { BsTwitterX } from '~/components/BsTwitterX'
 import supportsWebP from 'supports-webp'
 
 const Winter2022: Component<{}> = () => {
-  const [open, setOpen] = createSignal('')
   const [support, isSupport] = createSignal(false)
   supportsWebP.then((supported) => {
     isSupport(supported)
   })
-  function closeModal() {
-    setOpen('')
-  }
-  function openModal(page: string) {
-    setOpen(page)
-  }
   return (
     <div class='mt-16'>
       <Title>VCFes Winter 2023</Title>
