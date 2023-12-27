@@ -2,7 +2,7 @@ import { createHandler, StartServer } from '@solidjs/start/server'
 
 export default createHandler(() => (
   <StartServer
-    document={({ children, scripts }) => (
+    document={({ assets, children, scripts }) => (
       <html lang='en'>
         <head>
           <meta charset='utf-8' />
@@ -15,6 +15,7 @@ export default createHandler(() => (
             rel='stylesheet'
           />
           <link rel='stylesheet' href='https://use.typekit.net/gdc2fvk.css'></link>
+          {assets}
         </head>
         <body>
           <div id='app'>{children}</div>
