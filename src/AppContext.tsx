@@ -1,27 +1,27 @@
-import { Component, createContext, createEffect, createResource, useContext } from 'solid-js';
-import { useIsRouting, useLocation } from 'solid-app-router';
+import { Component, createContext, createEffect, createResource, useContext } from 'solid-js'
+import { useIsRouting, useLocation } from '@solidjs/router'
 
 type DataParams = {
-  page: string;
-};
+  page: string
+}
 
-const AppContext = createContext();
+const AppContext = createContext()
 
 export const AppContextProvider: Component<{}> = (props) => {
-  const location = useLocation();
+  const location = useLocation()
   const params = (): DataParams => {
-    let page = location.pathname.slice(1);
+    let page = location.pathname.slice(1)
     if (page == '') {
-      page = 'home';
+      page = 'home'
     }
-    return { page };
-  };
+    return { page }
+  }
 
   return (
     <AppContext.Provider>
       <div>{props.children}</div>
     </AppContext.Provider>
-  );
-};
+  )
+}
 
-export const useAppContext = () => useContext(AppContext);
+export const useAppContext = () => useContext(AppContext)
