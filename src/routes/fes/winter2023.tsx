@@ -21,7 +21,7 @@ const Winter2023: Component<{}> = () => {
       <Meta name='twitter:card' content='summary_large_image' />
       <Meta name='twitter:image' content='https://fes.vcborn.com/img/banner/winter2023.png' />
       <Meta name='twitter:site' content='@vcborn_support' />
-      <div class='relative flex flex-col justify-center h-[80vh] bg-black text-white'>
+      <div class='relative flex flex-col justify-center h-[80vh] bg-black text-white overflow-hidden'>
         <div class='max-w-7xl mx-auto px-3 container font-train text-6xl md:text-8xl relative group'>
           <div class='bg-black relative pb-6 pl-4 z-30 duration-300 group-hover:-translate-x-1 group-hover:translate-y-1'>
             <p>VCFes Winter 2023</p>
