@@ -114,9 +114,10 @@ const Winter2023: Component<{}> = () => {
               <h3 class='text-3xl font-medium'>ゲーム</h3>
               <p class='text-xl'>やる予定のゲーム</p>
               <ul class='list-disc ml-8 text-xl'>
-                <li>a</li>
-                <li>b</li>
-                <li>c</li>
+                <li>Human Fall Flat</li>
+                <li>Minecraft</li>
+                <li>Among Us</li>
+                <li>ぷよぷよテトリス2</li>
               </ul>
             </div>
             <div>
