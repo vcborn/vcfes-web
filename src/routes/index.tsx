@@ -34,22 +34,18 @@ const Home: Component<{}> = () => {
         {/* <h2 class="text-3xl font-semibold">開催中のイベント</h2> */}
         <h2 class='text-3xl font-semibold'>開催予定のイベント</h2>
         <div class='my-10'>
-          <A href='/fes/winter2023' aria-label='VCFes Winter 2023'>
-            <img
-              alt='VCFes Winter 2023 Banner'
-              class='hidden md:block shadow-lg duration-200 hover:shadow-md'
-              src={`/img/banner/winter2023.${support() ? 'webp' : 'jpg'}`}
-            />
-            <img
-              alt='VCFes Winter 2023'
-              class='block md:hidden shadow-lg duration-200 hover:shadow-md'
-              src={`/img/banner/winter2023-sm.${support() ? 'webp' : 'jpg'}`}
-            />
-          </A>
+          <p>なし</p>
         </div>
 
         <h2 class='text-3xl font-semibold'>過去のイベント</h2>
         <div class='my-10 grid grid-cols-1 md:grid-cols-3 gap-4'>
+          <A href='/fes/winter2023' aria-label='VCFes Winter 2023'>
+            <img
+              alt='VCFes Winter 2023'
+              class='shadow rounded-md duration-200 hover:shadow-sm'
+              src={`/img/banner/winter2023-sm.${support() ? 'webp' : 'jpg'}`}
+            />
+          </A>
           <A href='/fes/winter2022' aria-label='VCFes Winter 2022'>
             <img
               alt='VCFes Winter 2022'
