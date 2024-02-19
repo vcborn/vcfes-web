@@ -21,8 +21,8 @@ const Winter2023: Component<{}> = () => {
       <Meta name='twitter:card' content='summary_large_image' />
       <Meta name='twitter:image' content='https://fes.vcborn.com/img/banner/winter2023.png' />
       <Meta name='twitter:site' content='@vcborn_support' />
-      <div class='relative flex flex-col justify-center h-[80vh] bg-black text-white'>
-        <div class='max-w-7xl mx-auto px-4 container font-train text-6xl md:text-8xl relative group'>
+      <div class='relative flex flex-col justify-center h-[80vh] bg-black text-white overflow-hidden'>
+        <div class='max-w-7xl mx-auto px-3 container font-train text-6xl md:text-8xl relative group'>
           <div class='bg-black relative pb-6 pl-4 z-30 duration-300 group-hover:-translate-x-1 group-hover:translate-y-1'>
             <p>VCFes Winter 2023</p>
             <p>@2024/1/8</p>
@@ -114,9 +114,9 @@ const Winter2023: Component<{}> = () => {
               <h3 class='text-3xl font-medium'>ゲーム</h3>
               <p class='text-xl'>やる予定のゲーム</p>
               <ul class='list-disc ml-8 text-xl'>
-                <li>a</li>
-                <li>b</li>
-                <li>c</li>
+                <li>Minecraft</li>
+                <li>Among Us</li>
+                <li>?</li>
               </ul>
             </div>
             <div>
@@ -147,7 +147,7 @@ const Winter2023: Component<{}> = () => {
               />
               <div>
                 <p>あんころもち</p>
-                <p class='text-lg md:text-2xl font-sans opacity-80 mt-2'>紹介文をここに入力。</p>
+                <p class='text-lg md:text-2xl font-sans opacity-80 mt-2'>何気に初登場</p>
               </div>
             </div>
             <div class='flex items-center gap-5 text-2xl md:text-4xl'>
@@ -176,7 +176,7 @@ const Winter2023: Component<{}> = () => {
         </div>
         <div class='pr-4 pl-8 py-16'>
           <h2 class='text-5xl font-semibold font-futura flex flex-wrap items-center'>
-            VENUE：
+            VENUE: 
             <a href='https://www.youtube.com/@vcborn' class='text-youtube flex items-center gap-3'>
               <span class='underline'>YouTube Live</span>
               <BsBoxArrowUpRight size={28} />
