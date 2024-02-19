@@ -18,10 +18,13 @@
     "supports-webp": "^3.0.0",
     "tailwindcss": "^3.4.1",
     "terracotta": "^1.0.5",
-    "vinxi": "0.3.3"
+    "vinxi": "^0.3.3"
   },
   "engines": {
     "node": ">=18"
+  },
+  "overrides": {
+    "vinxi": "0.3.3"
   },
   "devDependencies": {
     "tailwindcss-brand-colors": "^0.3.6",
